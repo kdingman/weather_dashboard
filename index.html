@@ -10,7 +10,35 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-
+<!-- Top of Page -->
+<header class="jumbotron container-fluid text-center text-white bg-dark p-2">
+    <h1>Weather Dashboard</h1>
+</header>
     
+<!-- Container for page -->
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-3 search-column">
+            <h4 class="mt-2">Search for a City:</h4>
+                <input id="location" type="text" placeholder="Enter Location" class="form-input">
+                <button type="button" class="btn btn-dark">Search</button>
+            <div class="search-history" id="search-history-btn"></div>
+        </div>
+    </div>
+        <div class="col-12 col-md-9">
+            <div class="row border border-dark selected-location" id="current-forecast">
+                <div class="col-12">
+                    <h2 id="location-searched"></h2>
+                    <div id="current-weather-container" class="list-group"></div>
+                </div>
+            </div>
+            <div class="row border" id="five-day-forecast">
+                <h2 class="col-12" id="forecast"></h2>
+                <div class="d-flex" id="forecast-container"></div>
+            </div>
+        </div>
+</main>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
