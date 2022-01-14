@@ -24,3 +24,8 @@ var formSubmitHandler = function(event) {
     saveSearch();
     searchHistory(location);
 }
+
+// create day to show when location is selected
+var currentDay = document.createElement("span");
+currentDay.textContent = " (" + moment(weather.dt.value).format('L') + ") ";
+locationSearchInputEl.appendChild(currentDay);
