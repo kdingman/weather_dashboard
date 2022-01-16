@@ -1,7 +1,7 @@
 var locations = [];
 var ApiKey = "eea7b744b9f61a893b33f6357289c128";
 
-var locationFormEl = document.querySelector("#location");
+var locationFormEl = document.querySelector("#location-form");
 var locationInputEl = document.querySelector("#location");
 var locationSearchInputEl = document.querySelector("#location-searched");
 var currentWeatherEl = document.querySelector("#current-weather-container");
@@ -26,7 +26,10 @@ var formHandler = function(event) {
     searchHistory(location);
 }
 
-
+// Local Storage Save
+var saveHistory = function() {
+    localStorage.setItem("locations", JSON.stringify(locations));
+};
 
 // pull information from openweathermap.org
 var getWeatherForecast = function(location) {
