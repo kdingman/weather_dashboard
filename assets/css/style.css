@@ -1,19 +1,20 @@
+.card-body {
+    flex: auto;
+}
+
 .list-group {
-    line-height: 0.6;
+    line-height: 1.5;
     border: none;
 }
 
-.span.favorable {
-    background-color: rgb(144, 238, 144);
-    color: rgb(0, 0, 0);
+span.favorable { 
+    background-color: rgb(50, 205, 50);
 }
 
-.span.moderate {
+span.moderate {
     background-color: rgb(249, 243, 95);
-    color: rgb(0, 0, 0);
 }
 
-.span.severe {
+span.severe {
     background-color: rgb(229, 10, 10);
-    color: rgb((0, 0, 0);
 }
